@@ -11,6 +11,6 @@ class FiguresController < ApplicationController
    end
 
    post '/figures' do
-     
+
    end
 end
