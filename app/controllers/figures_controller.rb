@@ -9,4 +9,9 @@ class FiguresController < ApplicationController
    get '/figures/new' do
      erb :'figures/new'
    end
+
+   post '/figures' do
+     @figure = Figure.create(Name: params['figure']['name'])
+     @figure.save
+   end
 end
